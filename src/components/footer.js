@@ -1,5 +1,5 @@
 const Footer = () => {
-    return <h3>Matthew's Motorbike Shop</h3>;
+    return <h3></h3>;
   };
   
   export default Footer;

@@ -1,5 +1,6 @@
 import axios from "axios"; // Import axios
 import { useState } from "react"; // Import the useState hook from React
+import './Create.css';
 
 const Create = () => {
 

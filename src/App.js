@@ -17,6 +17,7 @@ function App() {
         <Route path="/read" element={<Read />} /> {/* View motorbike parts */}
         <Route path="/create" element={<Create />} /> {/* Add new motorbike part */}
         <Route path="/edit/:id" element={<Edit />} /> {/* Edit existing motorbike part */}
+        
       </Routes>
       <Footer />
     </Router>

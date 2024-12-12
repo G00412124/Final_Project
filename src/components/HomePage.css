@@ -1,0 +1,122 @@
+/* General Styling */
+.home-page {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hero {
+    position: relative;
+    background-image: url('https://www.wsbshopfitting.com/wp-content/uploads/2017/03/Goedhart_Motoren_134.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Overlay to improve text readability */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem; /* Larger font size for the heading */
+    margin-bottom: 20px;
+    font-weight: bold; /* Make the heading bold */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for better contrast */
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: lighter;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .cta-btn {
+    padding: 12px 25px;
+    font-size: 1.3rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #218838;
+  }
+  
+  .features {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .feature-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  

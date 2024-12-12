@@ -6,6 +6,7 @@ import axios from 'axios';
 
 
 
+
 const MotorbikePartItem = (props) => { // Change this line to a function component
 
   const handleDelete = (e) => { // Add this function to handle the delete button click
@@ -29,7 +30,7 @@ const MotorbikePartItem = (props) => { // Change this line to a function compone
           <blockquote className="blockquote mb-0">
             <img src={props.myPart.image} alt={props.myPart.name} className="motorbike-part-image" />  
             <footer className="motorbike-part-description">{props.myPart.description}</footer>
-            <footer className="motorbike-part-price">Price: ${props.myPart.price}</footer>
+            <footer className="motorbike-part-price">Price: £{props.myPart.price}</footer>
           </blockquote>
         </Card.Body>
         <div className="motorbike-part-actions">

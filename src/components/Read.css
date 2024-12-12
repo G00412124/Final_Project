@@ -1,0 +1,159 @@
+/* General Styles for Read Page */
+.read-page {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Container for the list of motorbike parts */
+  .motorbike-parts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Styling for the cards displaying motorbike parts */
+  .motorbike-part-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden; /* Ensure no content overflows the card */
+  }
+  
+  .motorbike-part-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title of each motorbike part card */
+  .motorbike-part-card h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Description text inside each card */
+  .motorbike-part-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: lighter;
+  }
+  
+  /* Price styling */
+  .motorbike-part-card .price {
+    font-size: 1.2rem;
+    color: #28a745; /* Green color for price */
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Image styling */
+  .motorbike-part-card img {
+    width: 100%; /* Make the image fill the width of the card */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 8px; /* Ensure rounded corners for the image */
+    margin-bottom: 15px; /* Space between the image and the card content */
+  }
+  
+  /* Button Styles for Edit and Delete */
+  button.cta-btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #28a745; /* Green color for motorbike theme */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    font-weight: bold;
+    width: 100%; /* Make buttons take full width inside card */
+    max-width: 250px; /* Ensure buttons don't get too wide */
+  }
+  
+  /* Edit Button */
+  button.cta-btn:hover {
+    background-color: #218838; /* Darker green when hovering */
+    transform: translateY(-3px); /* Lift the button when hovered */
+  }
+  
+  button.cta-btn:active {
+    background-color: #1e7e34; /* Even darker green when button is pressed */
+    transform: translateY(0); /* Return the button to normal position */
+  }
+  
+  /* Styling for delete button */
+  button.cta-btn.delete-btn {
+    background-color: #dc3545; /* Red color for delete */
+  }
+  
+  button.cta-btn.delete-btn:hover {
+    background-color: #c82333; /* Darker red for hover */
+  }
+  
+  button.cta-btn.delete-btn:active {
+    background-color: #bd2130; /* Even darker red for active state */
+  }
+  
+  /* Space between buttons */
+  .card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons */
+    align-items: center; /* Center buttons */
+  }
+  
+  /* Responsive Design for Small Screens */
+  @media (max-width: 1024px) {
+    .motorbike-part-card {
+      width: 45%; /* On medium screens, show 2 cards per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .motorbike-part-card {
+      width: 100%; /* On small screens, show 1 card per row */
+    }
+  
+    /* Styling for the heading on smaller screens */
+    h3 {
+      font-size: 2rem; /* Smaller heading for mobile */
+    }
+  }
+  
+  /* Background Image Styling */
+  .read-page {
+    background-image: url('https://example.com/path-to-your-image.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center;
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    height: 100vh; /* Ensure the background covers the full viewport height */
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 20px;
+  }
+  

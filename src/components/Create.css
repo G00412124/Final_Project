@@ -1,0 +1,106 @@
+/* General Styling for the Create Component */
+.create-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #33fd00;
+    padding: 30px;
+    color: #333;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    border-color: #333;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  input[type="submit"] {
+    padding: 12px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  /* Styling the form container */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Container for Form Labels */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Add a border with an industrial/steampunk look */
+  .create-page {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://www.wsbshopfitting.com/wp-content/uploads/2017/03/Goedhart_Motoren_134.jpg'); 
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+    padding: 50px 15px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /* Input Field and Button Styles */
+  input[type="text"], input[type="number"] {
+    border: 1px solid #333;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #218838; /* Change button color when hovered */
+  }
+  
+  

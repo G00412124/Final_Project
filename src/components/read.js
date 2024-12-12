@@ -1,6 +1,8 @@
 import MotorbikeParts from "./MotorbikeParts"; // Import the MotorbikeParts component
 import { useEffect, useState } from "react"; // Import the useEffect and useState hooks from React
 import axios from "axios"; // Import axios
+import './Read.css'; 
+
 
 const Read = () => {
 
