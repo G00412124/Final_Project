@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 
 // MongoDB Connection
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://admin:admin@matthewservices.7cywq.mongodb.net/Matts MotorParts') // Connect to MongoDB
+mongoose.connect('mongodb+srv://admin:admin@matthewservices.7cywq.mongodb.net/yourDatabaseName') // Connect to MongoDB
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error('MongoDB connection error:', err)); // Log any errors
 

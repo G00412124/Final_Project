@@ -146,7 +146,7 @@
   
   /* Background Image Styling */
   .read-page {
-    background-image: url('https://example.com/path-to-your-image.jpg'); /* Replace with your image URL */
+   
     background-size: cover; /* Ensures the image covers the container */
     background-position: center;
     background-attachment: fixed; /* Keeps the image fixed when scrolling */

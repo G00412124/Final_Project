@@ -28,5 +28,5 @@ const NavigationBar = () => {
 };
 
 
-// Export the NavigationBar component
+// Export the NavigationBar components
 export default NavigationBar;
