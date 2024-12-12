@@ -156,4 +156,18 @@
     border-radius: 10px;
     padding: 50px 20px;
   }
+
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 1rem;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #218838;
+  }
   

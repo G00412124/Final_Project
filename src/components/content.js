@@ -4,7 +4,7 @@ const Content = () => {
   return (
     <div className="home-page">
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero"> 
         <div className="hero-overlay"></div> {/* Semi-transparent overlay */}
         <div className="hero-content">
           <h1>Welcome to Matt's MotorParts</h1>
@@ -33,7 +33,7 @@ const Content = () => {
       </section>
 
       {/* Footer Section */}
-      <footer className="footer">
+      <footer className="footer"> 
         <p>&copy; 2024 Motorbike Parts. All rights reserved.</p>
       </footer>
     </div>

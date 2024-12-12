@@ -4,19 +4,24 @@ import './Create.css';
 
 const Create = () => {
 
-    const [name, setName] = useState(''); // Create a name state variable for the part
-    const [description, setDescription] = useState(''); // Create a description state variable for the part
-    const [price, setPrice] = useState(''); // Create a price state variable for the part
-    const [image, setImage] = useState(''); // Create an image state variable for the part
+    // Create state variables for the name, description, price, and image
+    const [name, setName] = useState(''); 
+    const [description, setDescription] = useState(''); 
+    const [price, setPrice] = useState(''); 
+    const [image, setImage] = useState(''); 
 
-    const handleSubmit = (e) => { // Create a function called handleSubmit that takes an event as an argument
-        e.preventDefault(); // Prevent the default form submission behavior
-        const motorbikePart = {name, description, price, image}; // Create a motorbike part object with the name, description, price, and image
+
+    // Create a function to handle the form submission
+    const handleSubmit = (e) => { 
+        e.preventDefault(); 
+        const motorbikePart = {name, description, price, image}; 
         console.log(motorbikePart);     
 
-        axios.post('http://localhost:4000/api/motorbikeParts', motorbikePart) // Make a post request to the motorbike parts endpoint with the motorbike part object
-        .then((res) => {console.log(res.data)}) // Log the response data to the console
-        .catch((error) => {console.error(error)}); // Log any errors to the console
+
+        // Send a POST request to the server
+        axios.post('http://localhost:4000/api/motorbikeParts', motorbikePart) 
+        .then((res) => {console.log(res.data)}) 
+        .catch((error) => {console.error(error)}); 
     }
 
     return ( // Return a form with input fields for the name, description, price, and image

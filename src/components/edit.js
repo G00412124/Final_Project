@@ -4,10 +4,10 @@ import axios from 'axios';
 
 export default function Edit() {
   const { id } = useParams();  // Get the motorbike part ID from the URL
-  const [name, setName] = useState("");  // State for motorbike part name
-  const [description, setDescription] = useState("");  // State for motorbike part description
-  const [price, setPrice] = useState("");  // State for motorbike part price
-  const [image, setImage] = useState("");  // State for motorbike part image URL
+  const [name, setName] = useState("");  
+  const [description, setDescription] = useState("");  
+  const [price, setPrice] = useState("");  
+  const [image, setImage] = useState("");  
   const navigate = useNavigate();  // Hook to navigate after successful update
 
   // Fetch the motorbike part data when the component mounts

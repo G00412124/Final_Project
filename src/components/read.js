@@ -1,31 +1,45 @@
-import MotorbikeParts from "./MotorbikeParts"; // Import the MotorbikeParts component
-import { useEffect, useState } from "react"; // Import the useEffect and useState hooks from React
-import axios from "axios"; // Import axios
-import './Read.css'; 
-
+import { useState, useEffect } from 'react';
+import MotorbikeParts from './MotorbikeParts';
+import axios from 'axios';
+import './Read.css';
 
 const Read = () => {
+  const [motorbikeParts, setMotorbikeParts] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
-  const [motorbikeParts, setMotorbikeParts] = useState([]); // Create a motorbikeParts state variable
-
-  useEffect(() => { // Use an effect hook to make a GET request to the motorbike parts endpoint
-    
-    axios.get('http://localhost:4000/api/motorbikeParts') // Make a GET request to the motorbike parts endpoint
+  useEffect(() => {
+    axios.get('http://localhost:4000/api/motorbikeParts')
       .then((response) => {
-        console.log(response.data);   
-        setMotorbikeParts(response.data.parts); // Set the motorbikeParts state to the parts array from the response
+        setMotorbikeParts(response.data.parts);
       })
-      .catch((error) => { // Log any errors to the console
-        console.log(error); 
+      .catch((error) => {
+        console.log(error);
       });
-  }, []); // Add an empty dependency array to ensure the effect runs only once when the component mounts
+  }, []);
+
+  // Filter parts based on search term
+  const filteredParts = motorbikeParts.filter((part) => {
+    return part.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+           part.description.toLowerCase().includes(searchTerm.toLowerCase());
+  });
 
   return (
     <div>
-      <h3>Motorbike Parts List</h3>   
-      <MotorbikeParts myParts={motorbikeParts} /> 
+      <h3>Motorbike Parts List</h3>
+
+      {/* Search bar */}
+      <input 
+        type="text"
+        placeholder="Search for motorbike parts..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        className="search-input"
+      />
+
+      {/* Pass the filtered list to MotorbikeParts */}
+      <MotorbikeParts myParts={filteredParts} setMotorbikeParts={setMotorbikeParts} />
     </div>
   );
-}
+};
 
-export default Read; // Export the Read component
+export default Read;

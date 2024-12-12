@@ -10,7 +10,7 @@ import axios from 'axios';
 const MotorbikePartItem = (props) => { // Change this line to a function component
 
   const handleDelete = (e) => { // Add this function to handle the delete button click
-    e.preventDefault(); // Prevent the default form behavior
+    e.preventDefault(); 
     console.log('Delete clicked'); // Log a message to the console
 
     axios.delete('http://localhost:4000/api/motorbikeParts/' + props.myPart._id) // Send a DELETE request
